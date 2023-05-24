@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="text/javascript" src="teste2.js"></script>
+    <link rel="stylesheet" href="css.css">
+    </style>
+
+    <title>Document</title>
+</head>
+<div>
+
+    <div class="espaço">
+
+        <h2>Impedâncias em Retangular</h2>
+        <div class="imp">
+            <label>ZA (Parte Real):</label>
+            <input type="number" id="zalinha">
+            <br>
+    
+            <label>ZB (Parte Real):</label>
+            <input type="number" id="zblinha">
+            <br>
+    
+            <br>
+            <label>ZC (Parte Real):</label>
+            <input type="number" id="zclinha">
+            <br>
+
+            <label>LINHA (Parte Real):</label>
+            <input type="number" id="zcarga">
+
+            <label>ZN caso3 (Parte Real):</label>
+            <input type="number" id="zn">
+        </div>
+
+        <div class="impimg">
+            <label>ZA (Parte Imaginária):</label>
+            <input type="number" id="zalinai">
+
+            <label>ZB (Parte Imaginária):</label>
+            <input type="number" id="zblinhai">
+
+            <label>ZC (Parte Imaginária):</label>
+            <input type="number" id="zclinhai">
+
+            <label>LINHA (Parte Imaginária):</label>
+            <input type="number" id="zcargai">
+
+            <label>ZN caso3 (Parte Imaginária):</label>
+            <input type="number" id="zni">
+        </div>
+       <div class="van">
+        <label>VAN (Parte Real):</label>
+        <input type="number" id="vab">
+
+
+       </div>
+        <div class="vani">
+            <label>VAN (Parte Imaginária):</label>
+            <input type="number" id="vabi">
+
+        </div>
+
+
+      
+    </div>
+
+
+    <div class="casos">
+        <h3> casos</h3>
+        <input type="checkbox" id="caso1" name="caso1" value="caso1"> caso1
+        <input type="checkbox" id="caso2" name="caso2" value="caso2"> caso2
+        <input type="checkbox" id="caso3" name="caso3" value="caso3"> caso3
+    </div>
+
+    <div class="fonte">
+        <h3>fonte</h3>
+        <input type="checkbox" id="fontepol" name="fontepol" value="fontepol"> fonte polar
+        <input type="checkbox" id="VAB" name="VAB" value="VAB"> VAB
+        <input type="checkbox" id="fase" name="fase" value="negativa"> sequencia de fase negativa
+    </div>
+
+    <div class="impedancias">
+        <h3>impedancias</h3>
+        <input type="checkbox" id="polar" name="polar" value="polar"> polar
+        <input type="checkbox" id="triangulo" name="triangulo" value="triangulo"> triangulo
+    </div>
+
+
+    <br>
+
+
+    <button onclick="caso1()">calcular
+
+    </button>
+
+
+    <div class="resultados">
+        <div class="container1">
+            <h3>valores em polar</h3>
+
+            <p id="ia"></p>
+            <p id="ib"></p>
+            <p id="ic"></p>
+
+            <p id="linhaa"> </p>
+            <p id="linhab"> </p>
+            <p id="linhac"></p>
+
+            <p id="fasea"> </p>
+            <p id="faseb"> </p>
+            <p id="fasec"></p>
+
+            <p id="pofa"> </p>
+            <p id="pofb"> </p>
+            <p id="pofc"></p>
+
+            <p id="pofa2"> </p>
+            <p id="pofb2"> </p>
+            <p id="pofc2"></p>
+        </div>
+
+        <div class="container">
+            <h3>valores em Retangular</h3>
+
+            <p id="iap"></p>
+            <p id="ibp"></p>
+            <p id="icp"></p>
+
+            <p id="linhaap"> </p>
+            <p id="linhabp"> </p>
+            <p id="linhacp"></p>
+
+            <p id="faseap"> </p>
+            <p id="fasebp"> </p>
+            <p id="fasecp"></p>
+
+
+            <p id="pofap"> </p>
+            <p id="pofbp"> </p>
+            <p id="pofcp"></p>
+
+            <p id="pofap2"> </p>
+            <p id="pofbp2"> </p>
+            <p id="pofcp2"></p>
+
+        </div>
+    </div>
+
+
+
+    </body>
+
+</html>

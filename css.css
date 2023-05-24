@@ -1,0 +1,178 @@
+
+div{
+margin: 0px;
+padding: 0px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+}
+
+input[type="number"] {
+  width: 100px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+h6 {
+  margin-top: 15px;
+  color: #666;
+}
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+}
+
+input[type="number"] {
+  width: 100px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+
+
+h6 {
+  margin-top: 15px;
+  color: #0e0d0d;
+}
+
+p {
+  margin: 15px 0;
+}
+
+/* Alinhar elementos em colunas */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  flex-basis: 40%;
+  background-color: #F0F0F0;
+width: 100px;
+border: 10px solid rgb(0, 0, 0);
+box-shadow: 0px 0px 10px rgb(58, 58, 119);
+text-align: center;
+margin: 10px;
+  width: 30%;
+
+
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 40%;
+  background-color: #E0E0E0;
+width: 100px;
+border: 10px solid rgb(0, 0, 0);
+box-shadow: 0px 0px 10px rgb(58, 58, 119);
+text-align: center;
+margin: 10px;
+  width: 30%;
+
+}
+
+.resultados{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: 30%;
+
+}
+
+.espaço{
+  
+  background-color: #E0E0E0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;}
+
+.imp{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 20%;
+
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.impimg{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 20%;
+
+  margin: 10px;
+  padding: 10px;
+}
+
+.van{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 10px%;
+
+  margin: 10px;
+  padding: 10px;
+}
+
+.vani{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 10px;
+
+  margin: 10px;
+  padding: 10px;
+}
+
+
+
+
