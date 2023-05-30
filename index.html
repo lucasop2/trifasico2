@@ -64,7 +64,7 @@
                             <label class="custom-control-label" for="customRadio2">CASO 3</label>
                         </div>
                     </div>
-                
+
                     <button class="btns" onclick="deselecionarRadios()">Redefinir opção</button>
                 </div>
                 <div class=" options">
@@ -75,7 +75,7 @@
                         <div class="label">
                             <label class="custom-control-label" for="customRadio2">FONTE POLAR</label>
                         </div>
-                    </div>                   
+                    </div>
                     <div class="item">
                         <div class="checkbox">
                             <input type="checkbox" id="VAB" name="VAB" value="VAB">
@@ -83,7 +83,7 @@
                         <div class="label">
                             <label class="custom-control-label" for="customRadio2">VAB</label>
                         </div>
-                    </div>                    
+                    </div>
                     <div class="item">
                         <div class="checkbox">
                             <input type="checkbox" id="fase" name="fase" value="negativa">
@@ -91,7 +91,7 @@
                         <div class="label">
                             <label class="custom-control-label" for="customRadio2">SEQUÊNCIA DE FASE NEGATIVA</label>
                         </div>
-                    </div>                 
+                    </div>
                 </div>
                 <div class="fonte options line2">
                     <div class="item">
@@ -113,56 +113,103 @@
                 </div>
                 <div class="fonte options line2 linebtns">
                     <button class="btns btns-calcula" onclick="caso1()">CALCULAR</button>
+                    <button class="btns btns-calcula" onclick="limpar_dados()">LIMPAR DADOS</button>
+                    <button class="btns btns-calcula" onclick="limpar_resultados()">LIMPAR RESULTADOS</button>
                 </div>
             </div>
         </div>
         <div class="box box2">
             <div class="resultados-polar resultados">
                 <h2 class="title">Valores em polar</h2>
+                <table class="tabela-respostas ">
+                    <thead>
+                        <tr>
+                        
+                            <th scope="col">A</th>
+                            <th scope="col">B</th>
+                            <th scope="col">C</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            
+                            <td id="ia">0</td>
+                            <td id="ib">0</td>
+                            <td id="ic">0</td>
+                        </tr>
+                        <tr>
+                           
+                            <td id="linhaa">0</td>
+                            <td id="linhab">0</td>
+                            <td id="linhac">0</td>
+                        </tr>
+                        <tr>
+                            <td id="fasea">0</td>
+                            <td id="faseb">0</td>
+                            <td id="fasec">0</td>
 
-                <p id="ia"></p>
-                <p id="ib"></p>
-                <p id="ic"></p>
+                        </tr>
+                        <tr>
 
-                <p id="linhaa"> </p>
-                <p id="linhab"> </p>
-                <p id="linhac"></p>
+                            <td id="pofa">0</td>
+                            <td id="pofb">0</td>
+                            <td id="pofc">0</td>
+                        </tr>
+                        <tr>
+                            <td id="pofa2">0</td>
+                            <td id="pofb2">0</td>
+                            <td id="pofc2">0</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p id="fasea"> </p>
-                <p id="faseb"> </p>
-                <p id="fasec"></p>
+    
 
-                <p id="pofa"> </p>
-                <p id="pofb"> </p>
-                <p id="pofc"></p>
 
-                <p id="pofa2"> </p>
-                <p id="pofb2"> </p>
-                <p id="pofc2"></p>
             </div>
             <div class="resultados-retangular resultados">
                 <h2 class="title">Valores em Retangular</h2>
+                <table class="tabela-respostas">
+                    <thead>
+                        <tr>
+                        
+                            <th scope="col">A</th>
+                            <th scope="col">B</th>
+                            <th scope="col">C</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            
+                            <td id="iap">0</td>
+                            <td id="ibp">0</td>
+                            <td id="icp">0</td>
+                        </tr>
+                        <tr>
+                           
+                            <td id="linhaap">0</td>
+                            <td id="linhabp">0</td>
+                            <td id="linhacp">0</td>
+                        </tr>
+                        <tr>
+                            <td id="faseap">0</td>
+                            <td id="fasebp">0</td>
+                            <td id="fasecp">0</td>
 
-                <p id="iap"></p>
-                <p id="ibp"></p>
-                <p id="icp"></p>
+                        </tr>
+                        <tr>
 
-                <p id="linhaap"> </p>
-                <p id="linhabp"> </p>
-                <p id="linhacp"></p>
-
-                <p id="faseap"> </p>
-                <p id="fasebp"> </p>
-                <p id="fasecp"></p>
-
-
-                <p id="pofap"> </p>
-                <p id="pofbp"> </p>
-                <p id="pofcp"></p>
-
-                <p id="pofap2"> </p>
-                <p id="pofbp2"> </p>
-                <p id="pofcp2"></p>
+                            <td id="pofap">0</td>
+                            <td id="pofbp">0</td>
+                            <td id="pofcp">0</td>
+                        </tr>
+                        <tr>
+                            <td id="pofap2">0</td>
+                            <td id="pofbp2">0</td>
+                            <td id="pofcp2">0</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
