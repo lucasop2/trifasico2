@@ -39,10 +39,9 @@
   border-radius: 10px;
   color: #da0037;
 }
-.btns-calcula {
-  margin-top: 7%;
+.btns{
   width: 20rem;
-  height: 5rem;
+
 }
 .linebtns {
   display: flex;
@@ -160,4 +159,18 @@
 .resultados{
   height: 22rem;
   
+}
+.tabela-respostas{
+ background-color: #171717;
+ border-radius: 10px;
+ width: 33rem;
+ height: 17rem;
+}
+
+table tr:nth-child(odd) {
+  background-color: #171717; /* Cor para as linhas ímpares */
+}
+
+table tr:nth-child(even) {
+  background-color: #303030; /* Cor para as linhas pares */
 }
