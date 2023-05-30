@@ -1,3 +1,14 @@
+function deselecionarRadios() {
+  var radios = document.querySelectorAll('input[type="radio"]');
+  for (var i = 0; i < radios.length; i++) {
+    radios[i].checked = false;
+  }
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+  var button = document.getElementById('deselecionar');
+  button.addEventListener('click', deselecionarRadios);
+});
 // Função para multiplicar dois números complexos
 function multiplicarComplexos(z1, z2) {
   const real = z1.real * z2.real - z1.imag * z2.imag;
