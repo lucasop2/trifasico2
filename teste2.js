@@ -265,9 +265,9 @@ function caso1() {
     const den1 = multiplicarComplexos(zb, zc);
     const den2 = multiplicarComplexos(zc, za);
     const num = somarComplexos2(za, zb, zc);
-    zb = dividirComplexos(den5, num);
-    zc = dividirComplexos(den1, num);
-    za = dividirComplexos(den2, num);
+    za = dividirComplexos(den5, num);
+    zb = dividirComplexos(den1, num);
+    zc = dividirComplexos(den2, num);
   }
 
   za = somarComplexos(za, zcarga);
@@ -549,12 +549,12 @@ function caso1() {
     potcret.angle.toFixed(3);
 
   document.getElementById("pofap").innerText =
-    "potencia da garga A: " +
+    "potencia da carga A: " +
     pota.real.toFixed(3) +
     " j" +
     pota.imag.toFixed(3);
   document.getElementById("pofbp").innerText =
-    "potencia da garga B: " +
+    "potencia da carga B: " +
     potb.real.toFixed(3) +
     " j" +
     potb.imag.toFixed(3);
