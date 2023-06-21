@@ -261,9 +261,9 @@ function caso1() {
   }
 
   if (triangulo.checked) {
-    const den5 = multiplicarComplexos(za, zb);
-    const den1 = multiplicarComplexos(zb, zc);
-    const den2 = multiplicarComplexos(zc, za);
+    const den5 = multiplicarComplexos(za, zc);
+    const den1 = multiplicarComplexos(za, zb);
+    const den2 = multiplicarComplexos(zc, zb);
     const num = somarComplexos2(za, zb, zc);
     za = dividirComplexos(den5, num);
     zb = dividirComplexos(den1, num);
@@ -414,33 +414,33 @@ function caso1() {
 
   if (triangulo.checked) {
     document.getElementById("linhaa").innerText =
-      "tenção de linha e de fase va: " +
+      "tensão de linha e de fase va: " +
       vanret.magnitude.toFixed(3) +
       " <" +
       vanret.angle.toFixed(3);
     document.getElementById("linhab").innerText =
-      "tenção de linha e de fase vb: " +
+      "tensão de linha e de fase vb: " +
       vbnret.magnitude.toFixed(3) +
       " <" +
       vbnret.angle.toFixed(3);
     document.getElementById("linhac").innerText =
-      "tenção de linha e de fase vc: " +
+      "tensão de linha e de fase vc: " +
       vcnret.magnitude.toFixed(3) +
       " <" +
       vcnret.angle.toFixed(3);
 
     document.getElementById("linhaap").innerText =
-      "tenção de linha e de fase va: " +
+      "tensão de linha e de fase va: " +
       VAN.real.toFixed(3) +
       "  j" +
       VAN.imag.toFixed(3);
     document.getElementById("linhabp").innerText =
-      "tenção de linha e de fase vb: " +
+      "tensão de linha e de fase vb: " +
       VBN.real.toFixed(3) +
       "  j" +
       VBN.imag.toFixed(3);
     document.getElementById("linhacp").innerText =
-      "tençao de linha e de fase vc: " +
+      "tensao de linha e de fase vc: " +
       VCN.real.toFixed(3) +
       "  j" +
       VCN.imag.toFixed(3);
@@ -469,65 +469,65 @@ function caso1() {
       "zc em estrela: " + zc.real.toFixed(3) + "  j" + zc.imag.toFixed(3);
   } else {
     document.getElementById("linhaa").innerText =
-      "tenção de linha vab: " +
+      "tensão de linha vab: " +
       vanret.magnitude.toFixed(3) +
       " <" +
       vanret.angle.toFixed(3);
     document.getElementById("linhab").innerText =
-      "tenção de linha vbc: " +
+      "tensão de linha vbc: " +
       vbnret.magnitude.toFixed(3) +
       " <" +
       vbnret.angle.toFixed(3);
     document.getElementById("linhac").innerText =
-      "tenção de linha vca: " +
+      "tensão de linha vca: " +
       vcnret.magnitude.toFixed(3) +
       " <" +
       vcnret.angle.toFixed(3);
 
     document.getElementById("linhaap").innerText =
-      "tenção de linha vab: " +
+      "tensão de linha vab: " +
       VAN.real.toFixed(3) +
       "  j" +
       VAN.imag.toFixed(3);
     document.getElementById("linhabp").innerText =
-      "tenção de linha vbc: " +
+      "tensão de linha vbc: " +
       VBN.real.toFixed(3) +
       "  j" +
       VBN.imag.toFixed(3);
     document.getElementById("linhacp").innerText =
-      "tençao de linha vca: " +
+      "tensão de linha vca: " +
       VCN.real.toFixed(3) +
       "  j" +
       VCN.imag.toFixed(3);
 
     document.getElementById("fasea").innerText =
-      "tenção de fase vab: " +
+      "tensão de fase vab: " +
       vcargaAret.magnitude.toFixed(3) +
       " <" +
       vcargaAret.angle.toFixed(3);
     document.getElementById("faseb").innerText =
-      "tenção de fase vbc: " +
+      "tensão de fase vbc: " +
       vcargabret.magnitude.toFixed(3) +
       " <" +
       vcargabret.angle.toFixed(3);
     document.getElementById("fasec").innerText =
-      "tenção de fase vca: " +
+      "tensão de fase vca: " +
       vcargacret.magnitude.toFixed(3) +
       " <" +
       vcargacret.angle.toFixed(3);
 
     document.getElementById("faseap").innerText =
-      "tenção de fase va: " +
+      "tensão de fase va: " +
       vcargaA.real.toFixed(3) +
       "  j" +
       vcargaA.imag.toFixed(3);
     document.getElementById("fasebp").innerText =
-      "tenção de fase vb: " +
+      "tensão de fase vb: " +
       vcargab.real.toFixed(3) +
       "  j" +
       vcargab.imag.toFixed(3);
     document.getElementById("fasecp").innerText =
-      "tençao de fase vc: " +
+      "tensao de fase vc: " +
       vcargac.real.toFixed(3) +
       "  j" +
       vcargac.imag.toFixed(3);
