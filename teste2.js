@@ -263,7 +263,7 @@ function caso1() {
   if (triangulo.checked) {
     const den5 = multiplicarComplexos(za, zc);
     const den1 = multiplicarComplexos(za, zb);
-    const den2 = multiplicarComplexos(zc, zb);
+    const den2 = multiplicarComplexos(zb, zc);
     const num = somarComplexos2(za, zb, zc);
     za = dividirComplexos(den5, num);
     zb = dividirComplexos(den1, num);
