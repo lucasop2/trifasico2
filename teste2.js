@@ -198,6 +198,7 @@ function caso1() {
     const parteReal = a.magnitude / raizDeTres;
     const parteImaginaria = a.angle - 30;
     vab = converterPolarParaRetangular(parteReal, parteImaginaria);
+    console.log(vab);
   } else {
     const a = converterRetangularParaPolar(vab2.real, vab2.imag);
     const raizDeTres = Math.sqrt(3);
@@ -205,6 +206,8 @@ function caso1() {
     const parteImaginaria = a.angle + 30;
     vab2 = converterPolarParaRetangular(parteReal, parteImaginaria);
   }
+
+  console.log(vab);
 
   if (fase.checked) {
     const A = somarComplexos(
@@ -220,7 +223,8 @@ function caso1() {
 
     const x = converterRetangularParaPolar(vca2.real, vca2.imag);
     const y = converterRetangularParaPolar(vbc2.real, vbc2.imag);
-  } else {
+  } 
+  else {
     const A = somarComplexos(
       { real: -0.5, imag: -0.866025 },
       { real: 0, imag: 0 }
@@ -240,7 +244,6 @@ function caso1() {
     zb = converterPolarParaRetangular(zblinha1, zblinhai1);
     zc = converterPolarParaRetangular(zclinha1, zclinhai1);
     zcarga = converterPolarParaRetangular(zcarga1, zcargai1);
-    vab = converterPolarParaRetangular(vab1, vabi1);
   } else {
     za = somarComplexos(
       { real: zalinha1, imag: zalinhai1 },
