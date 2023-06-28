@@ -180,63 +180,56 @@ function caso1() {
   var fonte = document.getElementById("fontepol");
   var VAB = document.getElementById("VAB");
   var caso2 = document.getElementById("caso2");
-  let vbc2, vca2, vab2;
+ 
   if (fonte.checked) {
     vab = converterPolarParaRetangular(vab1, vabi1);
-    vab2 = converterPolarParaRetangular(vab1, vabi1);
+    
   } else {
     vab = somarComplexos({ real: vab1, imag: vabi1 }, { real: aux, imag: aux });
-    vab2 = somarComplexos(
-      { real: vab1, imag: vabi1 },
-      { real: aux, imag: aux }
-    );
   }
-
-  if (VAB.checked) {
+  if (VAB.checked && fase.checked) {
     const a = converterRetangularParaPolar(vab.real, vab.imag);
     const raizDeTres = Math.sqrt(3);
     const parteReal = a.magnitude / raizDeTres;
-    const parteImaginaria = a.angle - 30;
-    vab = converterPolarParaRetangular(parteReal, parteImaginaria);
-    console.log(vab);
-  } else {
-    const a = converterRetangularParaPolar(vab2.real, vab2.imag);
-    const raizDeTres = Math.sqrt(3);
-    const parteReal = a.magnitude * raizDeTres;
     const parteImaginaria = a.angle + 30;
-    vab2 = converterPolarParaRetangular(parteReal, parteImaginaria);
-  }
-
-  console.log(vab);
-
-  if (fase.checked) {
+    vab = converterPolarParaRetangular(parteReal, parteImaginaria);
     const A = somarComplexos(
       { real: -0.5, imag: -0.866025 },
       { real: 0, imag: 0 }
     );
-
     vca = multiplicarComplexos(vab, A);
-    vca2 = multiplicarComplexos(vab2, A);
-
     vbc = dividirComplexos(vab, A);
-    vbc2 = dividirComplexos(vab2, A);
+  }
+else if (VAB.checked) {
+  const a = converterRetangularParaPolar(vab.real, vab.imag);
+  const raizDeTres = Math.sqrt(3);
+  const parteReal = a.magnitude / raizDeTres;
+  const parteImaginaria = a.angle - 30;
+  vab = converterPolarParaRetangular(parteReal, parteImaginaria);
 
-    const x = converterRetangularParaPolar(vca2.real, vca2.imag);
-    const y = converterRetangularParaPolar(vbc2.real, vbc2.imag);
-  } 
-  else {
+
+}
+else if (fase.checked) {
+  const A = somarComplexos(
+    { real: -0.5, imag: -0.866025 },
+    { real: 0, imag: 0 }
+  );
+  vca = multiplicarComplexos(vab, A);
+  vbc = dividirComplexos(vab, A);
+}
+
+  
+
+  if(!fase.checked) {
     const A = somarComplexos(
       { real: -0.5, imag: -0.866025 },
       { real: 0, imag: 0 }
     );
 
     vbc = multiplicarComplexos(vab, A);
-    vbc2 = multiplicarComplexos(vab2, A);
+    vca =dividirComplexos(vab,A);
 
-    vca = dividirComplexos(vab, A);
-    vca2 = dividirComplexos(vab2, A);
-    const x = converterRetangularParaPolar(vca2.real, vca2.imag);
-    const y = converterRetangularParaPolar(vbc2.real, vbc2.imag);
+ 
   }
 
   if (polar.checked) {
@@ -272,6 +265,9 @@ function caso1() {
     zb = dividirComplexos(den1, num);
     zc = dividirComplexos(den2, num);
   }
+  
+  if (triangulo.checked) {
+    caso3.checked = true; } 
 
   za = somarComplexos(za, zcarga);
   zb = somarComplexos(zb, zcarga);
@@ -281,9 +277,6 @@ function caso1() {
     const yat = dividirComplexos(aux2, za);
     const ybt = dividirComplexos(aux2, zb);
     const yct = dividirComplexos(aux2, zc);
-
-    const x = converterRetangularParaPolar(yat.real, yat.imag);
-    const y = converterRetangularParaPolar(ybt.real, ybt.imag);
 
     const yat2 = multiplicarComplexos(yat, vab);
     const ybt2 = multiplicarComplexos(ybt, vbc);
@@ -331,7 +324,7 @@ function caso1() {
     const soma = somarComplexos2(zna, znb, znc);
     const dem = somarComplexos(soma, aux2);
     const in1 = dividirComplexos(num, dem);
-
+console.log ("inn= ",in1);
     const suba = multiplicarComplexos(zna, in1);
     const subb = multiplicarComplexos(znb, in1);
     const subc = multiplicarComplexos(znc, in1);
@@ -342,7 +335,6 @@ function caso1() {
   }
 
   const neutro = somarComplexos2(ia, ib, ic);
-
   //corente de linha
   const iab = somarComplexos(ia, ib);
   const ibc = somarComplexos(ib, ic);
@@ -598,4 +590,6 @@ function caso1() {
     potc2.real.toFixed(3) +
     " j" +
     potc2.imag.toFixed(3);
+
+    console.log("neutro= ", neutroret);
 }
